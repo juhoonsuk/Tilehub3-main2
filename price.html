@@ -1,14 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
-<title>타일 가격</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>타일 컨테이너 가격 | 타일허브</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f5f5f5;
+margin:0;
+padding:40px;
+text-align:center;
+}
+
+h1{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card h2{
+margin-bottom:10px;
+}
+
+.card a{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+background:#ff6a2b;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.back{
+margin-top:50px;
+display:inline-block;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+</style>
 </head>
+
 
 <body>
 
-<h1>타일 가격 페이지</h1>
+<div class="container">
 
-<a href="index.html">메인으로</a>
+<h1>타일 사이즈별 가격 확인</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>600 × 600</h2>
+<p>대표 바닥 타일</p>
+<a href="https://smartstore.naver.com/luantile/category/7fbdc7ac1c7c4494b8dcf30bbefbfea9?cp=1" target="_blank">
+가격 확인
+</a>
+</div>
+
+<div class="card">
+<h2>600 × 1200</h2>
+<p>대형 포세린 타일</p>
+<a href="https://smartstore.naver.com/luantile/category/b5ffa3c0c5ab4aed884715dcd3db01d1?cp=1" target="_blank">
+가격 확인
+</a>
+</div>
+
+<div class="card">
+<h2>300 × 600</h2>
+<p>욕실 / 벽 타일</p>
+<a href="https://smartstore.naver.com/luantile/category/57fe38ea9eeb45e085c3496e5879d4ad?cp=1" target="_blank">
+가격 확인
+</a>
+</div>
+
+<div class="card">
+<h2>300 × 300</h2>
+<p>소형 타일</p>
+<a href="https://smartstore.naver.com/luantile/category/1bf9aa749c6f4baa8bed7254076ccd3e?cp=1" target="_blank">
+가격 확인
+</a>
+</div>
+
+</div>
+
+<a class="back" href="index.html">← 메인으로 돌아가기</a>
+
+</div>
 
 </body>
 </html>
